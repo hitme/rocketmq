@@ -86,6 +86,7 @@ public class RemotingCommand {
     }
 
     public static RemotingCommand createRequestCommand(int code, CommandCustomHeader customHeader) {
+        // [tzl]: major domain object creation
         RemotingCommand cmd = new RemotingCommand();
         cmd.setCode(code);
         cmd.customHeader = customHeader;
